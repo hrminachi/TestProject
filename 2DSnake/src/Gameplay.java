@@ -28,7 +28,7 @@ public class Gameplay extends JPanel implements KeyListener,ActionListener {
 	private ImageIcon downmouth;
 	private ImageIcon leftmouth;
 	
-	private int lenghtofsnake = 100;
+	private int lenghtofsnake = 3;
 	
 	private Timer timer;
 	private int delay = 100;
@@ -72,7 +72,7 @@ public class Gameplay extends JPanel implements KeyListener,ActionListener {
 	{
 		if (moves == 0) 
 		{
-			snakexlenght[20] = 50;
+			snakexlenght[2] = 50;
 			snakexlenght[1] = 75;
 			snakexlenght[0] = 100;
 			
@@ -108,7 +108,7 @@ public class Gameplay extends JPanel implements KeyListener,ActionListener {
 		g.setFont(new Font("areal",Font.BOLD,20));
 		g.drawString("Scores: "+score, 600, 35);
 		
-		// draw lenght 
+		// draw length 
 		g.setColor(Color.ORANGE);
 		g.setFont(new Font("areal",Font.BOLD,20));
 		g.drawString("Lenght of Snake: "+lenghtofsnake, 600, 60);
